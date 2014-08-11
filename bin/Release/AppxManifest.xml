@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="62206AnthonyC.LeagueCounterpicks" Publisher="CN=F30DC63F-6CBF-4542-8D92-E93F173C760F" Version="1.1.0.1" ProcessorArchitecture="neutral" />
+  <Identity Name="62206AnthonyC.LeagueCounterpicks" Publisher="CN=F30DC63F-6CBF-4542-8D92-E93F173C760F" Version="1.1.0.2" ProcessorArchitecture="neutral" />
   <mp:PhoneIdentity PhoneProductId="07d7f5f2-df87-49c2-be78-e32607b747a4" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>League Counterpicks</DisplayName>

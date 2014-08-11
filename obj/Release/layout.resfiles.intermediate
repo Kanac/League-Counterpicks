@@ -136,10 +136,9 @@ Assets\Ziggs_Square_0.png
 Assets\Zilean_Square_0.png
 Assets\Zyra_Square_0.png
 App.xbf
-ErrorPage.xbf
-HubPage.xbf
-ItemPage.xbf
+ChampionPage.xbf
 League of Legends Counterpicks.xr.xml
-SectionPage.xbf
+MainPage.xbf
+RolePage.xbf
 Common\ReadMe.txt
-DataModel\SampleData.json
+DataModel\Data.json
