@@ -57,9 +57,9 @@
                     <DataTemplate>
                         <Grid>
                             <Border Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}"
-                                    Margin="0,9.5,0,0"
-                                    Width="79"
-                                    Height="79">
+                                    Margin="0,0,0,0"
+                                    Width="70"
+                                    Height="70">
                                 <Image Source="{Binding ImagePath}"
                                        Stretch="UniformToFill" />
                             </Border>
@@ -69,7 +69,7 @@
             </GridView>
         </Grid>
         <UI:AdControl AutoRefreshIntervalInSeconds="60"
-                      ApplicationId="07d7f5f2-df87-49c2-be78-e32607b747a4"
+                      ApplicationId="bf747944-c75c-4f2a-a027-7c159b32261d"
                       AdUnitId="186035"
                       HorizontalAlignment="Center"
                       Height="80"

@@ -1,5 +1,6 @@
 ﻿using League_of_Legends_Counterpicks.Common;
 using League_of_Legends_Counterpicks.Data;
+using Microsoft.Advertising.Mobile.UI;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -163,6 +164,11 @@ namespace League_of_Legends_Counterpicks
         private void FilterTextBox_GotFocus(object sender, RoutedEventArgs e)
         {
             FilterTextBox.Text = string.Empty;
+        }
+
+        private void OnAddError(object sender, Microsoft.Advertising.Mobile.Common.AdErrorEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("AdControl error (" + ((AdControl)sender).Name + "): " + e.Error + " ErrorCode: " + e.ErrorCode.ToString());
         }
 
 

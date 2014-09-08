@@ -60,6 +60,7 @@ Assets\Leona_Square_0.png
 Assets\LightGray.png
 Assets\Lissandra_Square_0.png
 Assets\Logo.scale-240.png
+Assets\lol126.png
 Assets\Lucian_Square_0.png
 Assets\Lulu_Square_0.png
 Assets\Lux_Square_0.png
@@ -135,10 +136,10 @@ Assets\Zed_Square_0.png
 Assets\Ziggs_Square_0.png
 Assets\Zilean_Square_0.png
 Assets\Zyra_Square_0.png
+Common\ReadMe.txt
+DataModel\Data.json
 App.xbf
 ChampionPage.xbf
 League of Legends Counterpicks.xr.xml
 MainPage.xbf
 RolePage.xbf
-Common\ReadMe.txt
-DataModel\Data.json
