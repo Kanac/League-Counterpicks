@@ -202,6 +202,11 @@
 						<Value>Assets\Evelynn_Square_0.png</Value>
 					</Candidate>
 				</NamedResource>
+				<NamedResource name="Ezreal_Square_0.png" uri="ms-resource://62206AnthonyC.LeagueCounterpicks/Files/Assets/Ezreal_Square_0.png">
+					<Candidate type="Path">
+						<Value>Assets\Ezreal_Square_0.png</Value>
+					</Candidate>
+				</NamedResource>
 				<NamedResource name="Fiddlesticks_Square_0.png" uri="ms-resource://62206AnthonyC.LeagueCounterpicks/Files/Assets/Fiddlesticks_Square_0.png">
 					<Candidate type="Path">
 						<Value>Assets\Fiddlesticks_Square_0.png</Value>

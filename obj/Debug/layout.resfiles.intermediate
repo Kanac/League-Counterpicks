@@ -25,6 +25,7 @@ Assets\Draven_Square_0.png
 Assets\DrMundo_Square_0.png
 Assets\Elise_Square_0.png
 Assets\Evelynn_Square_0.png
+Assets\Ezreal_Square_0.png
 Assets\Fiddlesticks_Square_0.png
 Assets\Fiora_Square_0.png
 Assets\Fizz_square_0.png
@@ -143,7 +144,7 @@ Assets\Zyra_Square_0.png
 Common\ReadMe.txt
 DataModel\Data.json
 AdMediator.config
-Assets\SplashScreen.scale-100.png
+Assets\SplashScreen.png
 Assets\Square150x150Logo.png
 Assets\Square44x44Logo.scale-240.png
 Assets\Square71x71Logo.scale-240.png

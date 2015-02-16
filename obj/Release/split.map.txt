@@ -143,6 +143,7 @@
 "C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\PackageLayout\Assets\Fizz_square_0.png"			"Assets\Fizz_square_0.png"
 "C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\PackageLayout\Assets\Fiora_Square_0.png"			"Assets\Fiora_Square_0.png"
 "C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\PackageLayout\Assets\Fiddlesticks_Square_0.png"			"Assets\Fiddlesticks_Square_0.png"
+"C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\PackageLayout\Assets\Ezreal_Square_0.png"			"Assets\Ezreal_Square_0.png"
 "C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\PackageLayout\Assets\Evelynn_Square_0.png"			"Assets\Evelynn_Square_0.png"
 "C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\PackageLayout\Assets\Elise_Square_0.png"			"Assets\Elise_Square_0.png"
 "C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\PackageLayout\Assets\DrMundo_Square_0.png"			"Assets\DrMundo_Square_0.png"
