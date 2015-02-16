@@ -5,6 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:UI="using:Microsoft.Advertising.Mobile.UI"
+      xmlns:WindowsPhone81="using:Microsoft.AdMediator.WindowsPhone81"
       x:Name="pageRoot"
       x:Class="League_of_Legends_Counterpicks.RolePage"
       mc:Ignorable="d"
@@ -68,15 +69,16 @@
                 </GridView.ItemTemplate>
             </GridView>
         </Grid>
-        <UI:AdControl AutoRefreshIntervalInSeconds="60"
-                      ApplicationId="bf747944-c75c-4f2a-a027-7c159b32261d"
-                      AdUnitId="186035"
-                      HorizontalAlignment="Center"
-                      Height="80"
-                      IsAutoRefreshEnabled="True"
-                      Grid.Row="1"
-                      VerticalAlignment="Bottom"
-                      Width="480" />
+
+        
+        <WindowsPhone81:AdMediatorControl x:Name="AdMediator_4DDF05"
+                                          HorizontalAlignment="Center"
+                                          Height="67"
+                                          Id="AdMediator-Id-D51D3A99-5303-4F53-A238-CBE36008A173"
+                                          Grid.Row="1"
+                                          VerticalAlignment="Bottom"
+                                          Width="400" />
+
 
     </Grid>
 </Page>

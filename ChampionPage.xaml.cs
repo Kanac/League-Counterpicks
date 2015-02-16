@@ -2,6 +2,7 @@
 using League_of_Legends_Counterpicks.Data;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -30,6 +31,9 @@ namespace League_of_Legends_Counterpicks
     {
         private readonly NavigationHelper navigationHelper;
         private readonly ObservableDictionary defaultViewModel = new ObservableDictionary();
+        private List<Image> ChampList = new List<Image>();
+        private List<StackPanel> StackList = new List<StackPanel>();
+        ObservableCollection<String> counters = new ObservableCollection<string>();
 
         public ChampionPage()
         {
@@ -71,20 +75,20 @@ namespace League_of_Legends_Counterpicks
         private void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
             // TODO: Create an appropriate data model for your problem domain to replace the sample data
-            var championId = (string)e.NavigationParameter;
-            var champion = DataSource.GetChampion(championId);
+            String championId = (string)e.NavigationParameter;
+            Champion champion = DataSource.GetChampion(championId);
             this.DefaultViewModel["Champion"] = champion;
             this.DefaultViewModel["Role"] = DataSource.GetRoleId(champion.UniqueId);
 
-            var ChampList = new List<Image>();
-            var StackList = new List<StackPanel>();
+            
             ChampList.Add(Champ1); ChampList.Add(Champ2); ChampList.Add(Champ3); ChampList.Add(Champ4); ChampList.Add(Champ5);
             StackList.Add(Stack1);StackList.Add(Stack2);StackList.Add(Stack3);StackList.Add(Stack4);StackList.Add(Stack5);
             //var champlist = new Image[5];
             //champlist[0] = Champ1; champlist[1] = Champ2; champlist[2] = Champ3; champlist[3] = Champ4; champlist[4] = Champ5;
 
             int i = 0;
-            foreach (var counter in champion.Counters){
+            counters = champion.Counters;
+            foreach (var counter in counters){
                 var uri = "ms-appx:///Assets/" + counter + "_Square_0.png";
                 ChampList[i].Source = new BitmapImage(new Uri(uri, UriKind.Absolute));
                 int f = i;
@@ -147,5 +151,17 @@ namespace League_of_Legends_Counterpicks
         }
 
         #endregion
+
+
+
+        private void Champ_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            String champ = (sender as Image).Name.Substring("Champ".Length);
+            int champIndex = Int32.Parse(champ) - 1;
+            var championId = counters.ElementAt(champIndex);
+            Debug.WriteLine(championId);
+            Frame.Navigate(typeof(ChampionPage), championId);
+            
+        }
     }
 }

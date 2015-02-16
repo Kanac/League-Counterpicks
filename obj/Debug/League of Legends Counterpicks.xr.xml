@@ -55,16 +55,12 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Orientation" />
     </RootType>
-    <RootType FullName="Microsoft.Advertising.Mobile.UI.AdControl">
-      <RootProperty Name="AutoRefreshIntervalInSeconds" />
-      <RootProperty Name="ApplicationId" />
-      <RootProperty Name="AdUnitId" />
+    <RootType FullName="Microsoft.AdMediator.WindowsPhone81.AdMediatorControl">
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="IsAutoRefreshEnabled" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Id" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
-      <RootEvent Name="ErrorOccurred" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
@@ -72,7 +68,6 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="Style" />
       <RootProperty Name="FontFamily" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="CharacterSpacing" />
@@ -94,14 +89,10 @@
       <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Margin" />
       <RootEvent Name="LostFocus" />
       <RootEvent Name="GotFocus" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Image">
-      <RootProperty Name="Source" />
-      <RootProperty Name="MaxHeight" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Stretch" />
+      <RootEvent Name="KeyDown" />
     </RootType>
     <RootType FullName="League_of_Legends_Counterpicks.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
@@ -109,6 +100,11 @@
       <RootProperty Name="DefaultNavigationTransitionInfo" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Stretch" />
+      <RootEvent Name="Tapped" />
+    </RootType>
     <RootType FullName="League_of_Legends_Counterpicks.ChampionPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="ItemsSource" />

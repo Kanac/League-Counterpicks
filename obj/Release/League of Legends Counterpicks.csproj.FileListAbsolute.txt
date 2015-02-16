@@ -46,3 +46,26 @@ C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counter
 C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\ChampionPage.xaml
 C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\MainPage.xbf
 C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\ChampionPage.xbf
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\bin\Release\Microsoft.AdMediator.Core.dll
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\bin\Release\Microsoft.AdMediator.WindowsPhone81.dll
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\bin\Release\AdDuplex.Universal.Controls.WinPhone.XAML.winmd
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\bin\Release\AdDuplex.Universal.WinPhone.WinRT.winmd
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\bin\Release\Microsoft.AdMediator.WindowsPhone81.AdDuplex.dll
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\bin\Release\Microsoft.AdMediator.WindowsPhone81.MicrosoftAdvertising.dll
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\bin\Release\Microsoft.AdMediator.WindowsPhone81.Smaato.dll
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\bin\Release\SOMAWP81.dll
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\bin\Release\AdDuplex.Universal.Controls.WinPhone.XAML.pri
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\bin\Release\AdDuplex.Universal.WinPhone.WinRT.pri
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\bin\Release\Microsoft.Advertising.Mobile.Common.pri
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\bin\Release\Microsoft.Advertising.Mobile.Display.pri
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\bin\Release\Microsoft.Advertising.Mobile.UI.pri
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\bin\Release\SOMAWP81.pdb
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\bin\Release\SOMAWP81.pri
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\League of Legends Counterpicks.csproj.GenerateResource.Cache
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\AdDuplex.Universal.Controls.WinPhone.XAML.pri.xml
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\AdDuplex.Universal.WinPhone.WinRT.pri.xml
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\Microsoft.Advertising.Mobile.Common.pri.xml
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\Microsoft.Advertising.Mobile.Display.pri.xml
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\Microsoft.Advertising.Mobile.UI.pri.xml
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\SOMAWP81.pri.xml
+C:\Users\Anthony\documents\visual studio 2013\Projects\League of Legends Counterpicks\League of Legends Counterpicks\obj\Release\League of Legends Counterpicks.csprojResolveAssemblyReference.cache

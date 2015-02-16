@@ -35,6 +35,7 @@ namespace League_of_Legends_Counterpicks
         private readonly NavigationHelper navigationHelper;
         private readonly ObservableDictionary defaultViewModel = new ObservableDictionary();
         private readonly ResourceLoader resourceLoader = ResourceLoader.GetForCurrentView("Resources");
+        private Boolean navigate;
 
         public MainPage()
         {
@@ -83,6 +84,7 @@ namespace League_of_Legends_Counterpicks
             // TODO: Create an appropriate data model for your problem domain to replace the sample data
             var roles = await DataSource.GetRolesAsync() ;     //On loading the hub page, add all the groups to the default view model
             this.DefaultViewModel["Roles"] = roles;     //Which in turn is the data context for the hub page, with only one thing as a whole in it
+            navigate = true;
         }
 
         /// <summary>
@@ -153,12 +155,17 @@ namespace League_of_Legends_Counterpicks
 
         private void FilterTextBox_LostFocus(object sender, RoutedEventArgs e)
         {
-            string filter = FilterTextBox.Text;
-            var group = DataSource.FilterChampions(filter);
-            if (group.Champions.Count == 1)
-                Frame.Navigate(typeof(ChampionPage), group.Champions[0].UniqueId);
-            else
-                Frame.Navigate(typeof(RolePage), group);    
+            if (navigate == true)
+            {
+                navigate = false;
+                string filter = FilterTextBox.Text;
+                var group = DataSource.FilterChampions(filter);
+                if (group.Champions.Count == 1)
+                    Frame.Navigate(typeof(ChampionPage), group.Champions[0].UniqueId);
+                else
+                    Frame.Navigate(typeof(RolePage), group);
+
+            }
         }
 
         private void FilterTextBox_GotFocus(object sender, RoutedEventArgs e)
@@ -169,6 +176,16 @@ namespace League_of_Legends_Counterpicks
         private void OnAddError(object sender, Microsoft.Advertising.Mobile.Common.AdErrorEventArgs e)
         {
             System.Diagnostics.Debug.WriteLine("AdControl error (" + ((AdControl)sender).Name + "): " + e.Error + " ErrorCode: " + e.ErrorCode.ToString());
+        }
+
+        private void KeyDown_Event(object sender, KeyRoutedEventArgs e)
+        {
+            if (e.Key == Windows.System.VirtualKey.Enter) {
+
+                FilterTextBox_LostFocus(null, null);
+            }
+
+
         }
 
 

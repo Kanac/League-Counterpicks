@@ -6,6 +6,7 @@ Assets\Amumu_Square_0.png
 Assets\Anivia_Square_0.png
 Assets\Annie_Square_0.png
 Assets\Ashe_Square_0.png
+Assets\Azir_Square_0.png
 Assets\Blitzcrank_Square_0.png
 Assets\Brand_Square_0.png
 Assets\Braum_Square_0.png
@@ -15,10 +16,16 @@ Assets\Chogath_Square_0.png
 Assets\Corki_Square_0.png
 Assets\Darius_Square_0.png
 Assets\Diana_Square_0.png
+Assets\DJSona106.png
+Assets\DJSona1152.png
+Assets\DJSona120.png
+Assets\DJSona170.png
+Assets\DJSona360.png
 Assets\Draven_Square_0.png
 Assets\DrMundo_Square_0.png
 Assets\Elise_Square_0.png
 Assets\Evelynn_Square_0.png
+Assets\Ezreal.scale-240.png
 Assets\Ezreal_150.png
 Assets\Ezreal_44.png
 Assets\Ezreal_71.png
@@ -31,6 +38,7 @@ Assets\Fizz_square_0.png
 Assets\Galio_Square_0.png
 Assets\Gangplank_Square_0.png
 Assets\Garen_Square_0.png
+Assets\Gnar_Square_0.png
 Assets\Gragas_Square_0.png
 Assets\Graves_Square_0.png
 Assets\Hecarim_Square_0.png
@@ -43,6 +51,7 @@ Assets\JarvanIV_Square_0.png
 Assets\Jax_Square_0.png
 Assets\Jayce_Square_0.png
 Assets\Jinx_Square_0.png
+Assets\Kalista_Square_0.png
 Assets\Karma_Square_0.png
 Assets\Karthus_Square_0.png
 Assets\Kassadin_Square_0.png
@@ -51,14 +60,17 @@ Assets\Kayle_Square_0.png
 Assets\Kennen_Square_0.png
 Assets\Khazix_Square_0.png
 Assets\KogMaw_Square_0.png
+Assets\League of Legends Season 5 Main.png
 Assets\League of Legends Teambuilder.png
 Assets\league_of_legends.jpg
 Assets\League-of-Legends-Game-Logo.png
+Assets\LeagueofLegendsTeambuilder.png
 Assets\Leblanc_Square_0.png
 Assets\LeeSin_Square_0.png
 Assets\Leona_Square_0.png
 Assets\LightGray.png
 Assets\Lissandra_Square_0.png
+Assets\Logo.scale-180.png
 Assets\Logo.scale-240.png
 Assets\lol126.png
 Assets\Lucian_Square_0.png
@@ -85,6 +97,7 @@ Assets\Pantheon_Square_0.png
 Assets\Poppy_Square_0.png
 Assets\Quinn_Square_0.png
 Assets\Rammus_Square_0.png
+Assets\RekSai_Square_0.png
 Assets\Renekton_Square_0.png
 Assets\Rengar_Square_0.png
 Assets\Riven_Square_0.png
@@ -99,11 +112,14 @@ Assets\Singed_Square_0.png
 Assets\Sion_Square_0.png
 Assets\Sivir_Square_0.png
 Assets\Skarner_Square_0.png
+Assets\SmallLogo.scale-100.png
 Assets\SmallLogo.scale-240.png
 Assets\Sona_Square_0.png
 Assets\Soraka_Square_0.png
+Assets\SplashScreen.scale-180.png
 Assets\SplashScreen.scale-240.jpg
-Assets\StoreLogo.scale-240.png
+Assets\Square310x310Logo.scale-80.png
+Assets\Square70x70Logo.scale-180.png
 Assets\Swain_Square_0.png
 Assets\Syndra_Square_0.png
 Assets\Talon_Square_0.png
@@ -124,8 +140,11 @@ Assets\VelKoz_Square_0.png
 Assets\Vi_Square_0.png
 Assets\Viktor_Square_0.png
 Assets\Vladimir_Square_0.png
+Assets\Voidgate_Square_0.png
+Assets\Voidspawn_Square_0.png
 Assets\Volibear_Square_0.png
 Assets\Warwick_Square_0.png
+Assets\Wide310x150Logo.scale-100.png
 Assets\WideLogo.scale-240.png
 Assets\Xerath_Square_0.png
 Assets\XinZhao_Square_0.png
@@ -138,8 +157,17 @@ Assets\Zilean_Square_0.png
 Assets\Zyra_Square_0.png
 Common\ReadMe.txt
 DataModel\Data.json
+AdMediator.config
+Assets\SplashScreen.scale-240.png
+Assets\Square150x150Logo.png
+Assets\Square44x44Logo.scale-240.png
+Assets\Square71x71Logo.scale-240.png
+Assets\StoreLogo.scale-240.png
 App.xbf
 ChampionPage.xbf
 League of Legends Counterpicks.xr.xml
 MainPage.xbf
 RolePage.xbf
+DJSona1152.scale-240.png
+DJSona120.scale-240.png
+Ezreal_71.scale-240.png

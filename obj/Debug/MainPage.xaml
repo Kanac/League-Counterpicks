@@ -5,6 +5,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:data="using:League_of_Legends_Counterpicks.Data"
       xmlns:UI="using:Microsoft.Advertising.Mobile.UI"
+      xmlns:WindowsPhone81="using:Microsoft.AdMediator.WindowsPhone81"
       x:Class="League_of_Legends_Counterpicks.MainPage"
       DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Mode=Self}}"
       d:DataContext="{Binding Source={d:DesignData Source=/DataModel/Data.json, Type=data:DataSource}}"
@@ -18,18 +19,7 @@
             <RowDefinition Height="7*" />
             <RowDefinition Height="0.7*" />
         </Grid.RowDefinitions>
-        <Grid>
-            <StackPanel> 
-                <Image Source="/Assets/League-of-Legends-Game-Logo.png"
-                       MaxHeight="90" 
-                       HorizontalAlignment="Center"></Image>
-                <TextBlock FontFamily="Chiller"
-                           FontSize="45"
-                           Foreground="#FFE0E042"
-                           Text="Counters"
-                           HorizontalAlignment="Center"></TextBlock>
-            </StackPanel>
-        </Grid>
+        <Grid />
 
         <!--Enter inside the dictionary's only key, groups, and then into the list holding them -->
         <Grid Grid.Row="1">
@@ -38,16 +28,18 @@
                 <RowDefinition Height="9*" />
             </Grid.RowDefinitions>
             <StackPanel>
-                <TextBox x:ConnectionId='3' x:Name="FilterTextBox"
+                <TextBox x:ConnectionId='2' x:Name="FilterTextBox"
                                                             
-                                                           />
+                                                          
+                                                
+                         Margin="15,0,15,0" />
             </StackPanel>
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="2.5*" />
                 </Grid.ColumnDefinitions>
-                <ListView x:ConnectionId='2' ItemsSource="{Binding Roles}"
+                <ListView x:ConnectionId='1' ItemsSource="{Binding Roles}"
                           Grid.Row="1"
                           IsItemClickEnabled="True"
                                                             
@@ -56,15 +48,18 @@
                         <DataTemplate>
                             <StackPanel Margin="0,0,0,20">
                                 <TextBlock Text="{Binding UniqueId}"
-                                           Style="{ThemeResource ListViewItemTextBlockStyle}" />
+                                           Style="{ThemeResource ListViewItemTextBlockStyle}"
+                                           FontFamily="Segoe WP Black" />
                             </StackPanel>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
             </Grid>
         </Grid>
-        <StackPanel Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Right">
-                    
+        <StackPanel Grid.Row="3"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Right">
+
             <TextBlock Text="By a Diamond 1"
                        FontSize="15"
                        Foreground="#FFCCDDF7" />
@@ -72,17 +67,14 @@
                        FontSize="15"
                        Foreground="#FFCCDDF7" />
         </StackPanel>
-        <Grid Grid.Row="3">
-            <UI:AdControl x:ConnectionId='1' AutoRefreshIntervalInSeconds="60"
-                          ApplicationId="bf747944-c75c-4f2a-a027-7c159b32261d"
-                          AdUnitId="185804"
-                          HorizontalAlignment="Center"
-                          IsAutoRefreshEnabled="True"
-                          VerticalAlignment="Center" 
-                          Width="480"
-                          Height="80"
-                                                    />
-        </Grid>
+        <Grid Grid.Row="3" />
+        <WindowsPhone81:AdMediatorControl x:Name="AdMediator_A55DCC"
+                                          HorizontalAlignment="Center"
+                                          Height="Auto"
+                                          Id="AdMediator-Id-4AC73109-F59E-4E11-917A-CB79BCC7979D"
+                                          Grid.Row="2"
+                                          VerticalAlignment="Center"
+                                          Width="Auto" />
     </Grid>
 </Page>
 
