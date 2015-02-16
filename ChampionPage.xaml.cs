@@ -33,7 +33,7 @@ namespace League_of_Legends_Counterpicks
         private readonly ObservableDictionary defaultViewModel = new ObservableDictionary();
         private List<Image> ChampList = new List<Image>();
         private List<StackPanel> StackList = new List<StackPanel>();
-        ObservableCollection<String> counters = new ObservableCollection<string>();
+        private ObservableCollection<String> counters = new ObservableCollection<string>();
 
         public ChampionPage()
         {
@@ -75,6 +75,13 @@ namespace League_of_Legends_Counterpicks
         private void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
             // TODO: Create an appropriate data model for your problem domain to replace the sample data
+            //If navigating via a counterpick, on loading that page, remove the previous history so the back page will go to main or role, not champion
+            var prevPage = Frame.BackStack.ElementAt(Frame.BackStackDepth - 1);
+            if (prevPage.SourcePageType.Equals(typeof(ChampionPage)))
+            {
+                Frame.BackStack.RemoveAt(Frame.BackStackDepth - 1);
+                Debug.WriteLine("Done");
+            }
             String championId = (string)e.NavigationParameter;
             Champion champion = DataSource.GetChampion(championId);
             this.DefaultViewModel["Champion"] = champion;
@@ -159,7 +166,6 @@ namespace League_of_Legends_Counterpicks
             String champ = (sender as Image).Name.Substring("Champ".Length);
             int champIndex = Int32.Parse(champ) - 1;
             var championId = counters.ElementAt(champIndex);
-            Debug.WriteLine(championId);
             Frame.Navigate(typeof(ChampionPage), championId);
             
         }

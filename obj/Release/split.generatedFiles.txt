@@ -38,7 +38,5 @@ obj\Release\split.language-zh-hans.pri
 obj\Release\split.language-zh-hans.map.txt
 obj\Release\split.language-zh-hant.pri
 obj\Release\split.language-zh-hant.map.txt
-obj\Release\split.scale-100.pri
-obj\Release\split.scale-100.map.txt
 obj\Release\split.scale-180.pri
 obj\Release\split.scale-180.map.txt

@@ -1,6 +1,6 @@
-Scale=100
-Scale=180
-Scale=240
 Theme=LIGHT
 Theme=DARK
+Scale=100
+Scale=240
+Scale=180
 Language=EN-US
