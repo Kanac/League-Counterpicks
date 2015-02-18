@@ -11,16 +11,30 @@
       d:DataContext="{Binding Source={d:DesignData Source=/DataModel/Data.json, Type=data:DataSource}}"
       mc:Ignorable="d">
 
-
     <Grid x:Name="LayoutRoot"
           Background="{ThemeResource HubBackgroundImageBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="2.2*" />
+            <RowDefinition Height="2.5*" />
             <RowDefinition Height="7*" />
-            <RowDefinition Height="0.7*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="1.5*" />
+            </Grid.RowDefinitions>
+            <Grid>
+                <WindowsPhone81:AdMediatorControl x:Name="AdMediator_E1A43B"
+                                                  HorizontalAlignment="Center"
+                                                  Height="Auto"
+                                                  Id="AdMediator-Id-E7209969-04F2-48DC-A37A-A1456FAC25A0"
+                                                  VerticalAlignment="Center"
+                                                  Width="Auto" />
 
+
+            </Grid>
+        </Grid>
         <!--Enter inside the dictionary's only key, groups, and then into the list holding them -->
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
@@ -56,7 +70,7 @@
                 </ListView>
             </Grid>
         </Grid>
-        <StackPanel Grid.Row="3"
+        <StackPanel Grid.Row="2"
                     VerticalAlignment="Top"
                     HorizontalAlignment="Right">
 
@@ -67,7 +81,7 @@
                        FontSize="15"
                        Foreground="#FFCCDDF7" />
         </StackPanel>
-        <Grid Grid.Row="3" />
+        <Grid Grid.Row="2" />
         <WindowsPhone81:AdMediatorControl x:Name="AdMediator_A55DCC"
                                           HorizontalAlignment="Center"
                                           Height="Auto"
@@ -75,5 +89,8 @@
                                           Grid.Row="2"
                                           VerticalAlignment="Center"
                                           Width="Auto" />
+        
     </Grid>
 </Page>
+    
+   
