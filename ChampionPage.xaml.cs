@@ -19,6 +19,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
+using Windows.System;  
 
 // The Hub Application template is documented at http://go.microsoft.com/fwlink/?LinkID=391641
 
@@ -31,9 +33,12 @@ namespace League_of_Legends_Counterpicks
     {
         private readonly NavigationHelper navigationHelper;
         private readonly ObservableDictionary defaultViewModel = new ObservableDictionary();
+        private readonly String APP_ID = "3366702e-67c7-48e7-bc82-d3a4534f3086";
         private List<Image> ChampList = new List<Image>();
         private List<StackPanel> StackList = new List<StackPanel>();
         private ObservableCollection<String> counters = new ObservableCollection<string>();
+        private Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+        
 
         public ChampionPage()
         {
@@ -42,6 +47,7 @@ namespace League_of_Legends_Counterpicks
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
+            
         } 
 
         /// <summary>
@@ -61,6 +67,31 @@ namespace League_of_Legends_Counterpicks
             get { return this.defaultViewModel; }
         }
 
+        //Iterate view count of champion page each time its viewed for purposes of how often to show rate and review page
+        private async void reviewApp() {
+            if (!localSettings.Values.ContainsKey("Views"))
+                localSettings.Values.Add(new KeyValuePair<string, object>("Views", 0));
+            else
+                localSettings.Values["Views"] = 1 + Convert.ToInt32(localSettings.Values["Views"]);
+            
+            int viewCount = Convert.ToInt32(localSettings.Values["Views"]);
+            
+            //Only ask for review up to 10 times, once every 5 times this page is visited, and do not ask anymore once reviewed
+            if (viewCount % 5 == 0 && viewCount <= 50 && Convert.ToInt32(localSettings.Values["Rate"]) != 1 )
+            {
+                var reviewBox = new MessageDialog("Please rate this app 5 stars to support us!");
+                reviewBox.Commands.Add(new UICommand { Label = "Yes! :)", Id = 0 });
+                reviewBox.Commands.Add(new UICommand { Label = "Maybe later :(", Id = 1 });
+
+                var reviewResult = await reviewBox.ShowAsync();
+               
+                if ((int)reviewResult.Id == 0)
+                {
+                    await Launcher.LaunchUriAsync(new Uri("ms-windows-store:reviewapp?appid=" + APP_ID));
+                    localSettings.Values["Rate"] = 1;
+                }
+            }
+        }
         /// <summary>
         /// Populates the page with content passed during navigation. Any saved state is also
         /// provided when recreating a page from a prior session.
@@ -74,6 +105,7 @@ namespace League_of_Legends_Counterpicks
         /// session.  The state will be null the first time a page is visited.</param>
         private void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
+            reviewApp();
             // TODO: Create an appropriate data model for your problem domain to replace the sample data
             //If navigating via a counterpick, on loading that page, remove the previous history so the back page will go to main or role, not champion
             var prevPage = Frame.BackStack.ElementAt(Frame.BackStackDepth - 1);

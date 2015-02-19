@@ -22,7 +22,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
-
+using System.IO.Compression;
 // The Hub Application template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
 namespace League_of_Legends_Counterpicks
